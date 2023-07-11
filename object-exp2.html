@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        margin-top: 180px;
+      }
+      p {
+        width: 400px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function Book(title, author, valume, price) {
+        this.title = title;
+        this.author = author;
+        this.valume = valume;
+        this.price = price;
+      }
+      var html = new Book("웹 표준의 정석", "Ko", "608", "28,000");
+      var youtube = new Book("유튜브 영상 만들기", "Kim", "368", "16,000");
+      var python = new Book("점프 투 파이썬", "Park", "352", "18,800");
+
+      var bookList = [html, youtube, python];
+      document.write("<h1>책 제목으로 살펴보기</h1>");
+      for (var i = 0; i < bookList.length; i++) {
+        document.write(
+          `<p>${bookList[i].title} / ${bookList[i].author} / ${bookList[i].valume} / ${bookList[i].price}`
+        );
+      }
+    </script>
+  </body>
+</html>

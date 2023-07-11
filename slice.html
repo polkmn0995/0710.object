@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slice</title>
+  </head>
+  <body>
+    <p>slice 매서드 사용하기</p>
+    <script>
+      // 추출한 요소로 배열 만들고 기존 배열은 변경 안됨
+      var colors = ["red", "green", "blue", "white", "black"];
+      var colors2 = colors.slice(2); // 인덱스 2부터 끝까지
+      document.write(`반환된 배열 : ${colors2} <br>`);
+      document.write(`변경된 배열 : ${colors} <br>`);
+      var colors3 = colors.slice(2, 4); // 인덱스 2부터 4번까지
+      document.write(`변경된 배열 : ${colors3} <br>`);
+    </script>
+  </body>
+</html>

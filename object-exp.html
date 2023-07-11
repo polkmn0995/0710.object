@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>객체 복습</title>
+  </head>
+  <body>
+    <script>
+      // var a = 10 리너럴 표기법
+
+      // 객체 리터럴 표기법
+      var book = {
+        title: "자바스크립트",
+        author: "하쌤",
+        pages: 500,
+        price: 15000,
+        info: function () {
+          alert(`${this.title} 책 분량은 ${this.pages} 입니다.`);
+        },
+      };
+    </script>
+  </body>
+</html>

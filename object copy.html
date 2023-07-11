@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object 객체</title>
+  </head>
+  <body>
+    <!-- new 객체명 -->
+    <script>
+      // var book = {
+      // title: "자바스크립트", // 제목
+      // author: "홍길동", // 저자
+      // pages: 500, // 쪽수
+      // price: 15000, //가격
+      // };
+      // 콘솔 창에서 book 을 치면 위에 입력한 정보들을 볼 수 있다.
+
+      var today = new Date();
+      console.log(today.toLocaleString());
+      var nowMonth = today.getMonth(),
+        nowDate = today.getDate(),
+        nowDay = today.getDay();
+
+      document.write(`<h1>오늘 날짜 정보 </h1>`);
+      document.write(`현재 월 : ${nowMonth} <br>`);
+      document.write(`현재 일 : ${nowDate} <br>`);
+      document.write(`현재 요일 : ${nowDay} <br>`);
+
+      var worldcup = new Date(2002, 4, 23);
+      var weekdays = ["일", "월", "화", "수", "목", "금", "토"];
+      var dayName = weekdays[theDay];
+      var theMonth = worldcup.getMonth(),
+        theDate = worldcup.getDate(),
+        theYear = worldcup.getFullYear();
+
+      document.write(`<h1>월드컵 날짜 정보 </h1>`);
+      document.write(`월드컵 월 : ${theMonth} <br>`);
+      document.write(`월드컵 일 : ${theDate} <br>`);
+      document.write(`월드컵 년도 : ${theYear} <br>`);
+      document.write(`월드컵 요일 : ${dayName} `);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>splice</title>
+  </head>
+  <body>
+    <p>splice 매서드 사용하기</p>
+    <script>
+      //인수가 1개인 경우 - splice() 안의 숫자
+      var numbers = [1, 2, 3, 4, 5];
+      var newnumbers = numbers.splice(2);
+      document.write(`반환된 배열 : ${newnumbers} <br>`);
+      document.write(`변경된 배열 : ${numbers} <br>`);
+
+      //인수가 2개인 경우 - splice() 안의 숫자
+      var study = ["html", "css", "web", "jQuery"];
+      var newStudy = study.splice(2, 1);
+      document.write(`반환된 배열 : ${newStudy} <br>`);
+      document.write(`변경된 배열 : ${study} <br>`);
+
+      //인수가 3개인 경우 - splice() 안의 숫자
+      var study = ["html", "css", "web", "jQuery"];
+      var newStudy2 = study.splice(2, 1, "js");
+      document.write(`반환된 배열 : ${newStudy} <br>`);
+      document.write(`변경된 배열 : ${study} <br>`);
+    </script>
+  </body>
+</html>

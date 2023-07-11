@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      #display {
+        width: 500px;
+        padding: 20px auto;
+        border: 1px solid #ccc;
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="display"></div>
+    <script>
+      var toyRobot = {
+        productId: "123-12",
+        name: "robot",
+        price: "250,000",
+        madeIn: "korea",
+        quantity: 10,
+        showStock: function () {
+          document.querySelector(
+            "#display"
+          ).innerHTML = `${this.name} 제품은 ${this.quantity}개 남았습니다 <br>${this.name} 제품은 ${this.price}원 입니다`;
+        },
+      };
+      toyRobot.showStock();
+    </script>
+  </body>
+</html>
